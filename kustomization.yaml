@@ -1,0 +1,20 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+commonLabels:
+    cicd.red-chesterfield.com/name: group-sync-github
+    cicd.red-chesterfield.com/component: group-sync-github
+    cicd.red-chesterfield.com/layer: security
+
+commonAnnotations:
+    cicd.red-chesterfield.com/managed-by: gitops
+    cicd.red-chesterfield.com/scm-url: git@github.com:ocm-sop/group-sync-github.git
+
+namespace: "group-sync-operator"
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+resources:
+  - github-creds.yaml
+  - group-sync.yaml

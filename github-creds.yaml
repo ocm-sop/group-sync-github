@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: github-group-sync
+  namespace: group-sync-operator
+type: Opaque
+data:
+  token: VEhJU0lTTk9UQVJFQUxUT0tFTgo=

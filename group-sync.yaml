@@ -1,0 +1,13 @@
+apiVersion: redhatcop.redhat.io/v1alpha1
+kind: GroupSync
+metadata:
+  name: github-group-sync
+spec:
+  providers:
+    - github:
+        credentialsSecret:
+          name: github-group-sync
+          namespace: group-sync-operator
+        organization: open-cluster-management
+      name: github
+  schedule: 0/30 * * * *
