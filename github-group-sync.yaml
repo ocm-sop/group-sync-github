@@ -7,7 +7,7 @@ spec:
   providers:
     - github:
         credentialsSecret:
-          name: github-group-sync
+          name: github-creds
           namespace: group-sync-operator
         organization: open-cluster-management
       name: github
