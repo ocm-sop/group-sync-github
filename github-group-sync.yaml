@@ -11,4 +11,4 @@ spec:
           namespace: group-sync-operator
         organization: open-cluster-management
       name: github
-  schedule: 0/30 * * * *
+  schedule: "0/30 * * * *"
