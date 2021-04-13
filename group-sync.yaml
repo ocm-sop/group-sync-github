@@ -2,6 +2,7 @@ apiVersion: redhatcop.redhat.io/v1alpha1
 kind: GroupSync
 metadata:
   name: github-group-sync
+  namespace: group-sync-operator
 spec:
   providers:
     - github:
