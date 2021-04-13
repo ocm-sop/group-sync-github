@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Secret
 metadata:
-  name: github-group-sync
+  name: github-creds
   namespace: group-sync-operator
 type: Opaque
 data:
