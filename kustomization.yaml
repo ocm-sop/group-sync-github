@@ -6,4 +6,4 @@ generatorOptions:
 
 resources:
   - github-creds.yaml
-  - group-group-sync.yaml
+  - github-group-sync.yaml
