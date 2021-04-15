@@ -5,8 +5,8 @@ generatorOptions:
   disableNameSuffixHash: true
 
 configurations:
-  - kustomizaeconfig.yaml
-  
+  - kustomizeconfig.yaml
+
 resources:
   - github-creds.yaml
   - github-group-sync.yaml
