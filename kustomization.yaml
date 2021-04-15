@@ -4,6 +4,9 @@ kind: Component
 generatorOptions:
   disableNameSuffixHash: true
 
+configurations:
+  - kustomizaeconfig.yaml
+  
 resources:
   - github-creds.yaml
   - github-group-sync.yaml

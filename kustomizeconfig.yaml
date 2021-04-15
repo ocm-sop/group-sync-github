@@ -1,0 +1,17 @@
+namespace:
+- path: spec/providers/github/credentialsSecret/namespace
+  group: apiextensions.k8s.io
+  kind: GroupSync
+  apiVersion: redhatcop.redhat.io/v1alpha1
+
+nameReference:
+- kind: Secret
+  fieldSpecs:
+    - path: spec/providers/github/credentialsSecret/name
+      kind: GroupSync
+      apiVersion: redhatcop.redhat.io/v1alpha1
+
+varReference:
+- path: spec/schedule
+  kind: GroupSync
+  apiVersion: redhatcop.redhat.io/v1alpha1
